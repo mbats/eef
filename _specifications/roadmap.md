@@ -110,6 +110,7 @@ The specifier can also define that a properties view is visible only when a Siri
   - definition of the default rules in a default.properties **1d**
 - implementation of a prototype of the custom widget (color picker) **1d**
   - we will use this example to evaluate the API needed to support custom widgets
+- implementation of the custom widget to manage mono/multi valued references **16d**
 
 - ![WIP](images/status-wip.svg) context **10d**
   - viewpoint, representation, layer, filter, mapping
