@@ -1,1 +1,39 @@
-My PAge
+---
+layout: page
+title:
+---
+
+<div class="page-content" id="overview">
+  <section class="section--center mdl-grid">
+    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text">
+        <h4>The EMF Presentation Framework</h4>
+        <p>
+          The Extended Editing Framework is a presentation framework for the Eclipse Modeling Framework. It allows user to create rich user interfaces to edit EMF models.
+        </p>
+        <ul>
+          {% for collection in site.collections %}
+            <li>{{ collection[0] }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="mdl-card__actions">
+        <a href="{{ site.baseurl }}features" class="mdl-button">Have a look at our features</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--center mdl-grid">
+    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text">
+        <h4>Take care of your users</h4>
+        <p>
+          Editing models is an important task for the tools developed with EMF. EEF enables you to produce more usable user interface to edit EMF models via a generative process. EEF generates by default JFace wizards and properties views to edit your models but you can use the generated interfaces in any kind of your UI parts.
+        </p>
+        <p>
+          EEF is a good EMF world citizen, all customizations done on the EMF layer are integrated in the EEF interfaces. Frameworks like EMF Validation, EMF Transaction, etc natively work with EEF.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>

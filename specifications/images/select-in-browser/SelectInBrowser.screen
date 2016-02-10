@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore">
+  <widgets xsi:type="model:Window" id="1" x="208" y="200" width="1075" height="657" text="Eclipse" measuredWidth="1075" measuredHeight="657"/>
+  <widgets xsi:type="model:Menu" id="2" x="208" y="219" width="1075" text="&amp;File,&amp;Edit,&amp;View,~&amp;Window~,&amp;Help" measuredWidth="1075" measuredHeight="27">
+    <items x="5" y="0" width="29" height="27" text="&amp;File"/>
+    <items x="34" y="0" width="31" height="27" text="&amp;Edit"/>
+    <items x="65" y="0" width="36" height="27" text="&amp;View"/>
+    <items x="101" y="0" width="55" height="27" text="~&amp;Window~"/>
+    <items x="156" y="0" width="35" height="27" text="&amp;Help"/>
+  </widgets>
+  <widgets xsi:type="model:Tree" id="3" x="208" y="271" width="195" height="586" text="Modeling Project&#xA;-model&#xA;--Model&#xA;---Package1&#xA;----Class1&#xA;----Class2&#xA;---Package2&#xA;" measuredWidth="195" measuredHeight="586">
+    <items x="0" y="5" width="195" height="21" text="Modeling Project"/>
+    <items x="0" y="26" width="195" height="21" text="-model"/>
+    <items x="0" y="47" width="195" height="21" text="--Model"/>
+    <items x="0" y="68" width="195" height="21" text="---Package1"/>
+    <items x="0" y="89" width="195" height="21" text="----Class1"/>
+    <items x="0" y="110" width="195" height="21" text="----Class2"/>
+    <items x="0" y="131" width="195" height="21" text="---Package2"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Tabs" id="6" x="208" y="245" text="Model Explorer" measuredWidth="104" measuredHeight="27" selection="0">
+    <items x="1" y="0" width="102" height="27" text="Model Explorer"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="45" x="412" y="544" width="871" height="38" measuredWidth="871" measuredHeight="38" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" id="7" x="402" y="544" width="881" height="313" text="Properties View" measuredWidth="881" measuredHeight="313" selection="0">
+    <items x="10" y="0" width="104" height="27" text="Properties View"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TabbedPane" id="24" x="402" y="571" width="881" height="286" text="General, Documentation" measuredWidth="881" measuredHeight="286" selection="0" position="left">
+    <items x="0" y="10" width="104" height="25" text="General"/>
+    <items x="0" y="35" width="104" height="25" text="Documentation"/>
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="13" x="506" y="571" width="777" height="38" measuredWidth="777" measuredHeight="38" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="15" x="516" y="578" text="Class" measuredWidth="32" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="16" x="516" y="656" text="Name" measuredWidth="38" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Hotspot" id="43" x="208" y="360" width="195" height="25" measuredWidth="195" measuredHeight="25"/>
+  <widgets xsi:type="model:TextField" id="17" x="592" y="656" width="672" text="Class1" measuredWidth="672" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="21" x="516" y="608" width="758" height="33" measuredWidth="758" measuredHeight="33" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="20" x="528" y="613" text="Class1" measuredWidth="39" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="22" x="516" y="696" width="758" height="33" measuredWidth="758" measuredHeight="33" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="23" x="528" y="701" text="Operation 1" measuredWidth="70" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="25" x="516" y="744" text="Name" measuredWidth="38" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="26" x="592" y="744" width="672" text="Operation1" measuredWidth="672" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Shape" id="29" x="516" y="774" width="758" height="33" measuredWidth="758" measuredHeight="33" shapeType="rectangle">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="30" x="516" y="822" text="Name" measuredWidth="38" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:TextField" id="31" x="592" y="822" width="672" text="Operation1" measuredWidth="672" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Label" id="32" x="528" y="779" text="Operation 1" measuredWidth="70" measuredHeight="23">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="36" x="1360" y="655" width="81" height="25" text="Set Focus" measuredWidth="81" measuredHeight="25">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Callout" id="39" x="1336" y="655" text="1" measuredWidth="25" measuredHeight="25">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Callout" id="40" x="352" y="360" text="2" measuredWidth="25" measuredHeight="25">
+    <font bold="true"/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="41" x="1264" y="678" width="73" height="64" measuredWidth="73" measuredHeight="64" direction="bottom"/>
+  <widgets xsi:type="model:Note" id="42" x="376" y="360" width="129" height="57" text="Semantic element selected in Model explorer" measuredWidth="129" measuredHeight="57">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Hotspot" id="44" x="592" y="741" width="672" measuredWidth="672" measuredHeight="30"/>
+  <widgets xsi:type="model:Button" id="46" x="1246" y="554" width="27" height="17" measuredWidth="27" measuredHeight="17" icon="curved-arrow-left (small)">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Note" id="47" x="1311" y="440" text="Toggle button to &#xA;activate/desativate &#xA;the link with focus" measuredWidth="118" measuredHeight="59">
+    <font/>
+  </widgets>
+  <widgets xsi:type="model:Arrow" id="48" x="1264" y="492" width="48" height="63" measuredWidth="48" measuredHeight="63" direction="bottom"/>
+  <widgets xsi:type="model:Hotspot" id="49" x="1246" y="556" width="28" height="16" measuredWidth="28" measuredHeight="16"/>
+  <hRuler/>
+  <vRuler/>
+  <font size="12px"/>
+</model:Screen>

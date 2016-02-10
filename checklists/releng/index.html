@@ -1,0 +1,168 @@
+---
+layout: page
+title: Release Engineering Checklist
+---
+<div class="page-content" id="releng-checklist">
+  <section class="section--center mdl-grid">
+    <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp">
+      <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
+        <h4 class="mdl-cell mdl-cell--12-col">Release Engineering Checklist</h4>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-1</h5>
+          <p>Contribute the release to the aggregation build</p>
+          <h5>Setup</h5>
+          <p>Go to the <a href="https://git.eclipse.org/r/#/admin/projects/simrel/org.eclipse.simrel.build">simrel repository</a></p>
+          <h5>Instructions</h5>
+          <p>Ensure that EEF is properly contributed to the Simultaneous Release aggregation build</p>
+          <h5>Expected Results</h5>
+          <p>The Simultaneous Release <a href="https://hudson.eclipse.org/simrel/">aggregation build</a> is successful</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-2</h5>
+          <p>Update the New &amp; Noteworthy</p>
+          <h5>Setup</h5>
+          <p>Go to the New &amp; Noteworthy page</p>
+          <h5>Instructions</h5>
+          <p>Update the page with the relevant information</p>
+          <h5>Expected Results</h5>
+          <p>The New &amp; Noteworthy is up to date</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-3</h5>
+          <p>Update the Bugzilla</p>
+          <h5>Setup</h5>
+          <p>Go to the Bugzilla</p>
+          <h5>Instructions</h5>
+          <p>Close all the resolved issues, add the necessary versions in the administration interface and update the target milestones of the bugs that should be treated during the next release</p>
+          <h5>Expected Results</h5>
+          <p>The bugzilla is up to date</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-4</h5>
+          <p>Prepare the release review document</p>
+          <h5>Setup</h5>
+          <p>Go to the <a href="https://projects.eclipse.org/projects/modeling.emft.eef">Eclipse project metadata</a></p>
+          <h5>Instructions</h5>
+          <p>Update the release review document with the relevant information, check that the issues related to the release are visible and send it to the PMC</p>
+          <h5>Expected Results</h5>
+          <p>The release review document is accepted by the Eclipse Modeling PMC</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-5</h5>
+          <p>Review the Software Repository Reports</p>
+          <h5>Setup</h5>
+          <p>Go to the <a href="http://download.eclipse.org/releases/staging/buildInfo/reporeports/index.html">Software Repository Report</a></p>
+          <h5>Instructions</h5>
+          <p>Check all the reports for any potential error regarding EEF</p>
+          <h5>Expected Results</h5>
+          <p>The report does not show any error involving EEF</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-6</h5>
+          <p>Review the IP Log</p>
+          <h5>Setup</h5>
+          <p>Go to the <a href="https://www.eclipse.org/projects/ip_log.php?projectid=modeling.emft.eef">IP Log</a></p>
+          <h5>Instructions</h5>
+          <p>Check the report for any potential error regarding EEF</p>
+          <h5>Expected Results</h5>
+          <p>The report does not show any error involving EEF</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-7</h5>
+          <p>Tag the Git repository</p>
+          <h5>Setup</h5>
+          <p>Clone the Git repository</p>
+          <h5>Instructions</h5>
+          <p>Run git tag -a vX.Y.Z -m 'Version X.Y.Z' and git push origin --tags</p>
+          <h5>Expected Results</h5>
+          <p>The remote Git repository is tagged</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-8</h5>
+          <p>Create a dedicated branch on the repository</p>
+          <h5>Setup</h5>
+          <p>Clone the Git repository</p>
+          <h5>Instructions</h5>
+          <p>Run git branch vX.Y.Z and git push origin vX.Y.Z</p>
+          <h5>Expected Results</h5>
+          <p>The remote Git repository has a new branch for the maintenance of release</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-9</h5>
+          <p>Update the continuous integration</p>
+          <h5>Setup</h5>
+          <p>Go to the <a href="https://hudson.eclipse.org/eef/">continuous integration server</a></p>
+          <h5>Instructions</h5>
+          <p>Create a job for the maintenance branch of the release</p>
+          <h5>Expected Results</h5>
+          <p>A new job is available</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-10</h5>
+          <p>Install in all supported versions of Eclipse</p>
+          <h5>Setup</h5>
+          <p>Download an Eclipse Modeling Package for all supported versions of Eclipse</p>
+          <h5>Instructions</h5>
+          <p>Install EEF using its release update site</p>
+          <h5>Expected Results</h5>
+          <p>EEF is properly installed in all supported versions of Eclipse</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-11</h5>
+          <p>Install from the zip</p>
+          <h5>Setup</h5>
+          <p>Launch a freshly downloaded Eclipse SDK</p>
+          <h5>Instructions</h5>
+          <p>Install EEF using the zip</p>
+          <h5>Expected Results</h5>
+          <p>EEF is properly installed</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-12</h5>
+          <p>Install from the Eclipse Marketplace</p>
+          <h5>Setup</h5>
+          <p>Launch a freshly downloaded Eclipse SDK</p>
+          <h5>Instructions</h5>
+          <p>Install EEF thanks to the Eclipse Marketplace</p>
+          <h5>Expected Results</h5>
+          <p>EEF is properly installed</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-13</h5>
+          <p>Install from the Eclipse Modeling UI</p>
+          <h5>Setup</h5>
+          <p>Launch a freshly downloaded Eclipse Modeling Package</p>
+          <h5>Instructions</h5>
+          <p>Install EEF thanks to the Eclipse Modeling UI</p>
+          <h5>Expected Results</h5>
+          <p>EEF is properly installed</p>
+        </div>
+
+        <div class="section__text mdl-cell mdl-cell--12-col">
+          <h5>RELENG-14</h5>
+          <p>Install in Obeo Designer</p>
+          <h5>Setup</h5>
+          <p>Launch a freshly downloaded Obeo Designer</p>
+          <h5>Instructions</h5>
+          <p>Install EEF thanks to its stable update site</p>
+          <h5>Expected Results</h5>
+          <p>EEF is properly installed</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
